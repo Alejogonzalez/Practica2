@@ -71,8 +71,6 @@ public class MainActivity extends ActionBarActivity {
                         String showtotal = String.valueOf(dtotal);
                         total.setText(showtotal);
                     }
-
-
                 }
             }
         });
