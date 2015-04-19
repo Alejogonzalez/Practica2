@@ -40,7 +40,7 @@ public class MainActivity extends ActionBarActivity {
                 double dnota2 = Double.parseDouble(snota2);
                 double dnota3 = Double.parseDouble(snota3);
                 double dnota4 = Double.parseDouble(snota4);
-                if(dnota1<=5.0 && dnota2<=5.0 && dnota3<=5.0 && dnota4<=5.0 ){
+                if(dnota1<=5.0 && dnota2<=5.0 && dnota3<=5.0 && dnota4<=5.0 && dnota1>=0.0 && dnota2>=0.0 && dnota3>=0.0 && dnota4>=0.0){
                     double dnotaf = dnota1*0.15 + dnota2*0.10 + dnota3*0.4 + dnota4*0.35;
                     String Shownotaf = String.valueOf(dnotaf);
                     notaf.setText(Shownotaf);
