@@ -6,14 +6,15 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="1.5"
+        android:layout_weight="1.4"
 
         >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/titulo"
-            android:textSize="20dp"
+            android:textSize="22dp"
+            android:textColor="@color/maroon"
             />
         </LinearLayout>
     <LinearLayout
@@ -40,6 +41,7 @@
                 android:layout_weight="1"
                 android:hint="@string/hint_nota1"
                 android:id="@+id/Ednota1"
+                android:inputType="numberDecimal"
                 />
             </LinearLayout>
         <LinearLayout
@@ -59,7 +61,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="@string/hint_nota2"
-                android:id="@+id/Ednota2"/>
+                android:id="@+id/Ednota2"
+                android:inputType="numberDecimal"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
@@ -72,13 +75,15 @@
                 android:text="@string/lblnota3"
                 android:layout_weight="1.25"
                 android:textSize="20dp"
-                android:textColor="@color/maroon"/>
+                android:textColor="@color/maroon"
+                android:inputType="numberDecimal"/>
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="@string/hint_nota3"
-                android:id="@+id/Ednota3"/>
+                android:id="@+id/Ednota3"
+                android:inputType="numberDecimal"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
@@ -97,7 +102,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="@string/hint_nota4"
-                android:id="@+id/Ednota4"/>
+                android:id="@+id/Ednota4"
+                android:inputType="numberDecimal"/>
         </LinearLayout>
       </LinearLayout>
       <LinearLayout
@@ -114,13 +120,14 @@
                 android:layout_weight="1"
                 android:text="@string/lblnotafinal"
                 android:textSize="30dp"
-                android:id="@+id/Ednotafinal"
+
                 />
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="30dp"/>
+                android:textSize="30dp"
+                android:id="@+id/Ednotafinal"/>
             </LinearLayout>
       </LinearLayout>
     <Button
@@ -132,4 +139,9 @@
         android:id="@+id/btnnotaf"
         android:layout_marginBottom="35dp"
         />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.4"
+        android:id="@+id/EdErrors"/>
 </LinearLayout>
