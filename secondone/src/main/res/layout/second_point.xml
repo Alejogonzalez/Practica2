@@ -19,7 +19,7 @@
             android:textSize="20dp"
             android:hint="@string/Hint_num1"
             android:id="@+id/Ednum1"
-            android:inputType="number"/>
+            android:inputType="numberDecimal"/>
     </LinearLayout>
 
     <LinearLayout
@@ -39,7 +39,7 @@
             android:textSize="20dp"
             android:hint="@string/Hint_num2"
             android:id="@+id/Ednum2"
-            android:inputType="number"/>
+            android:inputType="numberDecimal"/>
     </LinearLayout>
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
@@ -75,7 +75,8 @@
             android:layout_height="15dp"
             android:layout_weight="1"
             android:text="@string/BtnCalcular"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:id="@+id/btncalc"/>
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -90,7 +91,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/LblTotal"/>
+            android:id="@+id/LblTotal"
+            android:inputType="numberDecimal"/>
       </LinearLayout>
 
 </LinearLayout>
