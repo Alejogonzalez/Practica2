@@ -48,7 +48,8 @@ public class MainActivity extends ActionBarActivity {
                     showe.setTextColor(getResources().getColor(R.color.green));
                 }
                 else{
-                    showe.setText("Alguna(s)notas estan mal Digitadas");
+                    showe.setText("Alguna(s) notas estan mal Digitadas");
+                    showe.setTextColor(getResources().getColor(R.color.red));
                 }
 
             }
