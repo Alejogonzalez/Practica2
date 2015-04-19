@@ -31,6 +31,7 @@ public class MainActivity extends ActionBarActivity {
         btncalc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 if(flag==1){
                     String snum1 = num1.getText().toString();
                     String snum2 = num2.getText().toString();

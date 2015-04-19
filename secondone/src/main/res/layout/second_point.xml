@@ -11,7 +11,8 @@
             android:layout_height="wrap_content"
             android:text="@string/Lblnum1"
             android:textSize="20dp"
-            android:layout_weight="2"/>
+            android:layout_weight="2"
+            android:textColor="@color/maroon"/>
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -25,13 +26,15 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5">
+        android:layout_weight="0.5"
+        >
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/Lblnum2"
             android:textSize="20dp"
-            android:layout_weight="2"/>
+            android:layout_weight="2"
+            android:textColor="@color/maroon"/>
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -71,12 +74,13 @@
         </RadioGroup>
 
         <Button
-            android:layout_width="150dp"
+            android:layout_width="180dp"
             android:layout_height="15dp"
             android:layout_weight="0.5"
             android:text="@string/BtnCalcular"
             android:layout_gravity="center"
-            android:id="@+id/btncalc"/>
+            android:id="@+id/btncalc"
+            android:textSize="30dp"/>
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -84,15 +88,16 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:textSize="30dp"
             android:text="@string/LblResul"
-            android:layout_weight="1"/>
+            android:layout_weight="1.75"/>
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:id="@+id/LblTotal"
-            android:inputType="numberDecimal"/>
+            android:inputType="numberDecimal"
+            android:textSize="30dp"/>
       </LinearLayout>
 
 </LinearLayout>
