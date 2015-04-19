@@ -4,6 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -12,6 +13,12 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.third_point);
+        //Instancio  los Elementos EditTExy, botones y TextView
+        EditText nota1 = (EditText) findViewById(R.id.Ednota1);
+        EditText nota2 = (EditText) findViewById(R.id.Ednota2);
+        EditText nota3 = (EditText) findViewById(R.id.Ednota3);
+        EditText nota4 = (EditText) findViewById(R.id.Ednota4);
+
     }
 
 

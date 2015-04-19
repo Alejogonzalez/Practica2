@@ -12,4 +12,7 @@
     <string name="hint_nota2">Ingrese la nota de Exposiciones</string>
     <string name="hint_nota3">Ingrese la nota de Laboratorio</string>
     <string name="hint_nota4">Ingrese la nota de Proyecto Final</string>
+    <string name="lblnotafinal">Nota Definitiva</string>
+    <string name="btnnotafinal">Calcular Nota</string>
+
 </resources>

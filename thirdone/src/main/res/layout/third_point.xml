@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="1"
+        android:layout_weight="1.5"
+
         >
         <TextView
             android:layout_width="wrap_content"
@@ -18,7 +20,8 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp">
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
@@ -28,14 +31,16 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:text="@string/lblnota1"
-                android:layout_weight="2"
+                android:layout_weight="1.25"
                 android:textSize="20dp"
                 android:textColor="@color/maroon"/>
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="@string/hint_nota1"/>
+                android:hint="@string/hint_nota1"
+                android:id="@+id/Ednota1"
+                />
             </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
@@ -46,14 +51,15 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:text="@string/lblnota2"
-                android:layout_weight="2"
+                android:layout_weight="1.25"
                 android:textSize="20dp"
                 android:textColor="@color/maroon"/>
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="@string/hint_nota2"/>
+                android:hint="@string/hint_nota2"
+                android:id="@+id/Ednota2"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
@@ -64,14 +70,15 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:text="@string/lblnota3"
-                android:layout_weight="2"
+                android:layout_weight="1.25"
                 android:textSize="20dp"
                 android:textColor="@color/maroon"/>
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="@string/hint_nota3"/>
+                android:hint="@string/hint_nota3"
+                android:id="@+id/Ednota3"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
@@ -82,21 +89,47 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:text="@string/lblnota4"
-                android:layout_weight="2"
+                android:layout_weight="1.25"
                 android:textSize="20dp"
                 android:textColor="@color/maroon"/>
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="@string/hint_nota4"/>
+                android:hint="@string/hint_nota4"
+                android:id="@+id/Ednota4"/>
         </LinearLayout>
       </LinearLayout>
       <LinearLayout
           android:layout_width="fill_parent"
           android:layout_height="fill_parent"
-          android:layout_weight="1">
-
-
+          android:layout_weight="1.2">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/lblnotafinal"
+                android:textSize="30dp"
+                android:id="@+id/Ednotafinal"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="30dp"/>
+            </LinearLayout>
       </LinearLayout>
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.2"
+        android:layout_gravity="center"
+        android:text="@string/btnnotafinal"
+        android:id="@+id/btnnotaf"
+        android:layout_marginBottom="35dp"
+        />
 </LinearLayout>
