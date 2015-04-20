@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FourthOne</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="lblbase">Base</string>
+    <string name="lblaltura">Altura</string>
+    <string name="lblradio">Radio</string>
+    <string name="lbllado">Lado</string>
+    <string name="lblcuadro">Cuadro</string>
+    <string name="lblrectangulo">Rectángulo</string>
+    <string name="lblcirculo">Círculo</string>
+    <string name="lbltriang">Triángulo</string>
+    <string name="hintaltura">Ingrese una Altura</string>
+    <string name="hintradio">Ingrese un Radio</string>
+    <string name="hintlado">Ingrese un Lado</string>
+    <string name="hintbase">Ingrese una Base</string>
+    <string name="titulo">Calculadora de Áreas de Figuras</string>
+    <string name="btncalc">Calcular Área</string>
+    <string name="lblcalc">Área = </string>
+
+</resources>
