@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">FifthOne</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="nombre">Nombre</string>
+    <string name="hint_name">Digite el nombre</string>
+    <string name="correo">Correo</string>
+    <string name="hint_correo">Digite el correo</string>
+    <string name="telefono">Teléfono</string>
+    <string name="hint_telef">Digite el teléfono</string>
+    <string name="btn_ok">Ok</string>
+    <string name="lblmasc">Masculino</string>
+    <string name="lblfeme">Femenino</string>
+    <string name="lblhobbie1">Gaming</string>
+    <string name="lblhobbie2">Deportes</string>
+    <string name="lblhobbie3">Bailar</string>
+    <string name="lblhobbie4">Leer</string>
+    <string name="lblsexo">Sexo</string>
+    <string name="pick_date">Fecha</string>
+</resources>
