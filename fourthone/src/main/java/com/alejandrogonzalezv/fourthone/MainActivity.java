@@ -56,6 +56,30 @@ public class MainActivity extends ActionBarActivity {
                         TxResul.setText(Showarea+" unidades^2");
                     }
                 }
+                if (flag==3){//Triangulo
+                    String sAltura = EdAltura.getText().toString();
+                    String sBase = EdBase.getText().toString();
+                    if(sAltura.isEmpty()){EdAltura.setError("Campo Vacio");}
+                    if(sBase.isEmpty()){EdBase.setError("Campo Vacio");}
+                    else{
+                        double dAltura = Double.parseDouble(sAltura);
+                        double dBase = Double.parseDouble(sBase);
+                        double Area = dAltura*dBase/2;
+                        String Showarea = String.valueOf(Area);
+                        TxResul.setText(Showarea+" unidades^2");
+                    }
+                }
+                if (flag==4){//Rectangulo
+                    String sRadio = EdRadio.getText().toString();
+
+                    if(sRadio.isEmpty()){EdRadio.setError("Campo Vacio");}
+                    else{
+                        double dRadio = Double.parseDouble(sRadio);
+                        double Area = 3.14159*dRadio*dRadio;
+                        String Showarea = String.valueOf(Area);
+                        TxResul.setText(Showarea+" unidades^2");
+                    }
+                }
             }
         });
     }
