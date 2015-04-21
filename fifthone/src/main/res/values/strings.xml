@@ -17,5 +17,6 @@
     <string name="lblhobbie3">Bailar</string>
     <string name="lblhobbie4">Leer</string>
     <string name="lblsexo">Sexo</string>
+    <string name="lblhobbies">Hobbies</string>
     <string name="pick_date">Fecha</string>
 </resources>

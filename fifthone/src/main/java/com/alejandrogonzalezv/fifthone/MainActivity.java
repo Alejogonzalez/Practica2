@@ -7,18 +7,24 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import java.util.Calendar;
 
 
 public class MainActivity extends ActionBarActivity {
-
+    int gyear=0;
+    int gmonth=0;
+    int gday = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fifthone);
+        final TextView fecha = (TextView)findViewById(R.id.Txtfecha);
 
     }
 
@@ -39,9 +45,16 @@ public class MainActivity extends ActionBarActivity {
 
         public void onDateSet(DatePicker view, int year, int month, int day) {
             // Do something with the date chosen by the user
+
+
         }
     }
 
+    public void showDatePickerDialog(View v) {
+        DialogFragment newFragment = new DatePickerFragment();
+          newFragment.show(getFragmentManager(),"datePicker");
+
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

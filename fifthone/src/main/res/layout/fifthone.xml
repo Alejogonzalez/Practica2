@@ -95,7 +95,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/lblsexo"
+        android:text="@string/lblhobbies"
         android:layout_gravity="center"
         android:textColor="@color/maroon"
         android:textSize="20dp"/>
@@ -174,5 +174,13 @@
         android:textSize="20dp"
         android:textColor="@color/black"
         android:id="@+id/Txtsex"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pick_date"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:id="@+id/Txtfecha"
         />
 </LinearLayout>
