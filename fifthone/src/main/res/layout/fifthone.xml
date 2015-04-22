@@ -101,8 +101,9 @@
         android:textSize="20dp"/>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="horizontal"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         >
 
         <CheckBox android:id="@+id/checkbox_h1"
@@ -137,50 +138,79 @@
         android:layout_height="wrap_content"
         android:text="@string/btn_ok"
         android:layout_gravity="center"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:id="@+id/btnok"
         />
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
 
-    <TextView
+    <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/nombre"
-        android:textSize="20dp"
-        android:textColor="@color/black"
-        android:id="@+id/TxtNombre"
-        />
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/TxtNombre"
+            />
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/correo"
-        android:textSize="20dp"
-        android:textColor="@color/black"
-        android:id="@+id/Txtcorreo"
-        />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/correo"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/Txtcorreo"
+            />
 
-    <TextView
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/telefono"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/Txttelef"
+            />
+        </LinearLayout>
+    <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/telefono"
-        android:textSize="20dp"
-        android:textColor="@color/black"
-        android:id="@+id/Txttelef"
-        />
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lblsexo"
-        android:textSize="20dp"
-        android:textColor="@color/black"
-        android:id="@+id/Txtsex"
-        />
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/pick_date"
-        android:textSize="20dp"
-        android:textColor="@color/black"
-        android:id="@+id/Txtfecha"
-        />
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblsexo"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/Txtsex"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblhobbies"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/Txthobbies"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_date"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/Txtfecha"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+
 </LinearLayout>

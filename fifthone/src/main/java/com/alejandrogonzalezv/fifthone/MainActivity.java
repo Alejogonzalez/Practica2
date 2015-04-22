@@ -24,7 +24,15 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fifthone);
-        final TextView fecha = (TextView)findViewById(R.id.Txtfecha);
+
+        EditText nombre = (EditText) findViewById(R.id.EdNombre);
+        EditText correo = (EditText) findViewById(R.id.EdCorreo);
+        EditText telefono = (EditText) findViewById(R.id.EdTelef);
+        TextView txtnombre = (TextView) findViewById(R.id.TxtNombre);
+        TextView txtcorreo = (TextView) findViewById(R.id.Txtcorreo);
+        TextView txttelefono = (TextView) findViewById(R.id.Txttelef);
+        TextView txtsexo = (TextView) findViewById(R.id.Txtsex);
+        TextView hobbies = (TextView) findViewById(R.id.Txthobbies);
 
     }
 
@@ -47,6 +55,13 @@ public class MainActivity extends ActionBarActivity {
 
         public void onDateSet(DatePicker view, int year, int month, int day) {
             // Do something with the date chosen by the user
+            TextView txfecha = (TextView) getActivity().findViewById(R.id.Txtfecha);
+            //System.out.println(day);
+            String smonth = String.valueOf(month+1);
+            String syear = String.valueOf(year);
+            String sday = String.valueOf(day);
+            txfecha.setText(sday+" / "+smonth+" / "+syear);
+
 
         }
     }
