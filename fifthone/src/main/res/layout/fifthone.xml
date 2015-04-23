@@ -40,7 +40,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_correo"
-            android:inputType="textPersonName"
+            android:inputType="textEmailAddress"
             android:textSize="20dp"
             android:layout_weight="1"
             android:id="@+id/EdCorreo"/>
@@ -61,11 +61,18 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_telef"
-            android:inputType="textPersonName"
+            android:inputType="text"
             android:textSize="20dp"
             android:layout_weight="1"
             android:id="@+id/EdTelef"/>
     </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblciudad"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/maroon"/>
     <Spinner
         android:id="@+id/cityspinner"
         android:layout_width="wrap_content"
