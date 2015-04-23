@@ -22,38 +22,38 @@
     <string name="lblciudad">Ciudad</string>
 
         <string-array name="planets_array">
-            <item>Leticia</item>
-            <item>Medellín</item>
             <item>Arauca</item>
-            <item>Barranquilla</item>
-            <item>Cartagena</item>
-            <item>Tunja</item>
-            <item>Manizales</item>
-            <item>Florencia</item>
-            <item>Yopal</item>
-            <item>Popayan</item>
-            <item>Valledupar</item>
-            <item>Quibdó</item>
-            <item>Montería</item>
-            <item>Bogotá</item>
-            <item>Puerto Inírida</item>
-            <item>San José del Guaviare</item>
-            <item>Neiva</item>
-            <item>Riohacha</item>
-            <item>Santa Marta</item>
-            <item>Villavicencio</item>
-            <item>San Juan de Pasto</item>
-            <item>Cúcuta</item>
-            <item>Mocoa</item>
             <item>Armenia</item>
-            <item>Pereira</item>
-            <item>San Andrés</item>
+            <item>Barranquilla</item>
+            <item>Bogotá</item>
             <item>Bucaramanga</item>
-            <item>Sincelejo</item>
-            <item>Ibagué</item>
             <item>Cali</item>
+            <item>Cartagena</item>
+            <item>Cúcuta</item>
+            <item>Florencia</item>
+            <item>Ibagué</item>
+            <item>Leticia</item>
+            <item>Manizales</item>
+            <item>Medellín</item>
             <item>Mitú</item>
+            <item>Mocoa</item>
+            <item>Montería</item>
+            <item>Neiva</item>
+            <item>Pereira</item>
+            <item>Popayan</item>
             <item>Puerto Carreño</item>
+            <item>Puerto Inírida</item>
+            <item>Quibdó</item>
+            <item>Riohacha</item>
+            <item>San Andrés</item>
+            <item>San José del Guaviare</item>
+            <item>San Juan de Pasto</item>
+            <item>Santa Marta</item>
+            <item>Sincelejo</item>
+            <item>Tunja</item>
+            <item>Valledupar</item>
+            <item>Villavicencio</item>
+            <item>Yopal</item>
         </string-array>
 
 </resources>
