@@ -77,7 +77,7 @@ public class MainActivity extends ActionBarActivity {
                 if(flagh==12){hobbies.setText("Bailar y Leer");}
                 if(flagh==7){hobbies.setText("Gaming, Deportes y Bailar");}
                 if(flagh==14){hobbies.setText("Deportes, Bailar y Leer");}
-                if(flagh==11){hobbies.setText("Gaming, Deportes y Bailar");}
+                if(flagh==11){hobbies.setText("Gaming, Deportes y Leer");}
                 if(flagh==13){hobbies.setText("Gaming, Bailar y Leer");}
                 if(flagh==15){hobbies.setText("Gaming, Deportes, Bailar y Leer");}
                 if(flagh==0){hobbies.setText("Hobbies");}
