@@ -19,4 +19,41 @@
     <string name="lblsexo">Sexo</string>
     <string name="lblhobbies">Hobbies</string>
     <string name="pick_date">Fecha</string>
+    <string name="lblciudad">Ciudad</string>
+
+        <string-array name="planets_array">
+            <item>Leticia</item>
+            <item>Medellín</item>
+            <item>Arauca</item>
+            <item>Barranquilla</item>
+            <item>Cartagena</item>
+            <item>Tunja</item>
+            <item>Manizales</item>
+            <item>Florencia</item>
+            <item>Yopal</item>
+            <item>Popayan</item>
+            <item>Valledupar</item>
+            <item>Quibdó</item>
+            <item>Montería</item>
+            <item>Bogotá</item>
+            <item>Puerto Inírida</item>
+            <item>San José del Guaviare</item>
+            <item>Neiva</item>
+            <item>Riohacha</item>
+            <item>Santa Marta</item>
+            <item>Villavicencio</item>
+            <item>San Juan de Pasto</item>
+            <item>Cúcuta</item>
+            <item>Mocoa</item>
+            <item>Armenia</item>
+            <item>Pereira</item>
+            <item>San Andrés</item>
+            <item>Bucaramanga</item>
+            <item>Sincelejo</item>
+            <item>Ibagué</item>
+            <item>Cali</item>
+            <item>Mitú</item>
+            <item>Puerto Carreño</item>
+        </string-array>
+
 </resources>

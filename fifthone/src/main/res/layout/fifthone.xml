@@ -66,6 +66,11 @@
             android:layout_weight="1"
             android:id="@+id/EdTelef"/>
     </LinearLayout>
+    <Spinner
+        android:id="@+id/cityspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -178,6 +183,14 @@
             android:textSize="20dp"
             android:textColor="@color/black"
             android:id="@+id/Txttelef"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblciudad"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/Txtciudad"
             />
         </LinearLayout>
     <LinearLayout
