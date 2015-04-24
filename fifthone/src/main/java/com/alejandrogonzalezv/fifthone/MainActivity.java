@@ -23,7 +23,7 @@ import java.util.Calendar;
 
 
 public class MainActivity extends ActionBarActivity {
-    int gyear=0;
+    final int gyear=0;
     int gmonth=0;
     int gday = 0;
     int flag=0;
@@ -57,6 +57,8 @@ public class MainActivity extends ActionBarActivity {
         btnsubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
                 txtnombre.setText(nombre.getText());
                 txtcorreo.setText(correo.getText());
                 txttelefono.setText(telefono.getText());
@@ -108,11 +110,11 @@ public class MainActivity extends ActionBarActivity {
 
         public void onDateSet(DatePicker view, int year, int month, int day) {
             // Do something with the date chosen by the user
-            TextView txfecha = (TextView) getActivity().findViewById(R.id.Txtfecha);
+            final TextView txfecha = (TextView) getActivity().findViewById(R.id.Txtfecha);
             //System.out.println(day);
             String smonth = "";
-            String syear = String.valueOf(year);
-            String sday = String.valueOf(day);
+            final String syear = String.valueOf(year);
+            final String sday = String.valueOf(day);
             if(month==0){smonth="Enero";}
             if(month==1){smonth="Febrero";}
             if(month==2){smonth="Marzo";}
@@ -125,7 +127,17 @@ public class MainActivity extends ActionBarActivity {
             if(month==9){smonth="Octubre";}
             if(month==10){smonth="Noviembre";}
             if(month==11){smonth="Diciembre";}
-            txfecha.setText(sday+" / "+smonth+" / "+syear);
+            Button btnsubmit = (Button) getActivity().findViewById(R.id.btnok);
+            final String finalSmonth = smonth;
+            btnsubmit.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    txfecha.setText(sday+" / "+ finalSmonth +" / "+syear);
+                }
+            });
+
+
+
 
 
         }
