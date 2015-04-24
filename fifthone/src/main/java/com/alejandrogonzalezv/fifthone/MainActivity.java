@@ -129,12 +129,12 @@ public class MainActivity extends ActionBarActivity {
             if(month==11){smonth="Diciembre";}
             Button btnsubmit = (Button) getActivity().findViewById(R.id.btnok);
             final String finalSmonth = smonth;
-            btnsubmit.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
+           // btnsubmit.setOnClickListener(new View.OnClickListener() {
+              //  @Override
+             //   public void onClick(View v) {
                     txfecha.setText(sday+" / "+ finalSmonth +" / "+syear);
-                }
-            });
+               // }
+            //});
 
 
 
