@@ -36,6 +36,11 @@ public class MainActivity extends ActionBarActivity {
                 String snota3 = nota3.getText().toString();
                 String snota4 = nota4.getText().toString();
                 //Obtengo el número de los Strings
+                if(snota1.isEmpty()){nota1.setError("Campo Vacio");}
+                if(snota2.isEmpty()){nota2.setError("Campo Vacio");}
+                if(snota3.isEmpty()){nota3.setError("Campo Vacio");}
+                if(snota4.isEmpty()){nota4.setError("Campo Vacio");}
+                else{
                 double dnota1 = Double.parseDouble(snota1);
                 double dnota2 = Double.parseDouble(snota2);
                 double dnota3 = Double.parseDouble(snota3);
@@ -51,7 +56,7 @@ public class MainActivity extends ActionBarActivity {
                 else{
                     showe.setText("Alguna(s) notas estan mal Digitadas");
                     showe.setTextColor(getResources().getColor(R.color.red));
-                }
+                }}
 
             }
         });
