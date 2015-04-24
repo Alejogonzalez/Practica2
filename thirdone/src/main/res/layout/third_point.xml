@@ -112,15 +112,16 @@
           android:layout_weight="1.2">
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/lightblue">
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/lblnotafinal"
                 android:textSize="30dp"
-
+                android:textColor="@color/black"
                 />
             <TextView
                 android:layout_width="fill_parent"
@@ -130,18 +131,22 @@
                 android:id="@+id/Ednotafinal"/>
             </LinearLayout>
       </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.4"
+        android:layout_gravity="center"
+        android:id="@+id/EdErrors"/>
     <Button
         android:layout_width="170dp"
         android:layout_height="fill_parent"
-        android:layout_weight="1.2"
+        android:layout_weight="1.35"
         android:layout_gravity="center"
         android:text="@string/btnnotafinal"
         android:id="@+id/btnnotaf"
-        android:layout_marginBottom="35dp"
+        android:layout_marginBottom="60dp"
+        android:background="@color/maroon"
+        android:textColor="@color/white"
         />
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="1.4"
-        android:id="@+id/EdErrors"/>
+
 </LinearLayout>

@@ -50,7 +50,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center"
-            android:layout_weight="0.5">
+            android:layout_weight="0.5"
+            android:background="@color/lightseagreen">
             <RadioButton android:id="@+id/radio_suma"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -80,7 +81,9 @@
             android:text="@string/BtnCalcular"
             android:layout_gravity="center"
             android:id="@+id/btncalc"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            android:background="@color/maroon"
+            android:textColor="@color/white"/>
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -90,7 +93,8 @@
             android:layout_height="wrap_content"
             android:textSize="30dp"
             android:text="@string/LblResul"
-            android:layout_weight="1.75"/>
+            android:layout_weight="1.75"
+            android:textColor="@color/maroon"/>
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
