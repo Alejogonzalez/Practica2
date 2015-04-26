@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.3">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Lblnum1"
+                android:textSize="20dp"
+                android:layout_weight="2"
+                android:textColor="@color/maroon"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:hint="@string/Hint_num1"
+                android:id="@+id/Ednum1"
+                android:inputType="numberDecimal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Lblnum2"
+                android:textSize="20dp"
+                android:layout_weight="2"
+                android:textColor="@color/maroon"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:hint="@string/Hint_num2"
+                android:id="@+id/Ednum2"
+                android:inputType="numberDecimal"/>
+        </LinearLayout>
+        </LinearLayout>
+
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="1.5"
+        android:background="@color/lightseagreen">
+        <RadioButton android:id="@+id/radio_suma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/RdSuma"/>
+        <RadioButton android:id="@+id/radio_resta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/RdResta"/>
+        <RadioButton android:id="@+id/radio_mult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/RdMultp"/>
+        <RadioButton android:id="@+id/radio_divi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/RdDiv"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.3"
+        android:text="@string/BtnCalcular"
+        android:layout_gravity="center"
+        android:id="@+id/btncalc"
+        android:textSize="30dp"
+        android:background="@color/maroon"
+        android:textColor="@color/white"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="@string/LblResul"
+            android:layout_weight="1.75"
+            android:textColor="@color/maroon"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/LblTotal"
+            android:inputType="numberDecimal"
+            android:textSize="30dp"/>
+    </LinearLayout>
+</LinearLayout>

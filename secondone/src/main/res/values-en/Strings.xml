@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Lblnum1">Number 1</string>
+    <string name="Lblnum2">Number 2</string>
+    <string name="LblResul">Answer</string>
+    <string name="Hint_num1">Input Number 1</string>
+    <string name="Hint_num2">Input Number 2</string>
+    <string name="RdSuma">Addition</string>
+    <string name="RdResta">Subtraction</string>
+    <string name="RdMultp">Multiplication</string>
+    <string name="RdDiv">Division</string>
+    <string name="BtnCalcular">Calculate</string>
+</resources>
