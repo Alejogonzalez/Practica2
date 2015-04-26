@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Thirdone</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="titulo">Movile Device Programing</string>
+    <string name="lblnota1">Quiz 15%</string>
+    <string name="lblnota2">Presentations 10%</string>
+    <string name="lblnota3">Labs 40%</string>
+    <string name="lblnota4">Final Project 35%</string>
+    <string name="hint_nota1">Input Quiz grade</string>
+    <string name="hint_nota2">Input Presentations grade</string>
+    <string name="hint_nota3">Ingrese Labs grade</string>
+    <string name="hint_nota4">Input Final Project grade</string>
+    <string name="lblnotafinal">Final Grade</string>
+    <string name="btnnotafinal">Calc Grade</string>
+</resources>
