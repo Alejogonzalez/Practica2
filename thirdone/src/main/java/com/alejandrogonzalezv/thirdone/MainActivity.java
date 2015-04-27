@@ -40,7 +40,7 @@ public class MainActivity extends ActionBarActivity {
                 if(snota2.isEmpty()){nota2.setError(getResources().getString(R.string.vacio));}
                 if(snota3.isEmpty()){nota3.setError(getResources().getString(R.string.vacio));}
                 if(snota4.isEmpty()){nota4.setError(getResources().getString(R.string.vacio));}
-                else{
+                if(snota1.isEmpty()==false && snota2.isEmpty()==false && snota3.isEmpty()==false && snota4.isEmpty()==false){
                 double dnota1 = Double.parseDouble(snota1);
                 double dnota2 = Double.parseDouble(snota2);
                 double dnota3 = Double.parseDouble(snota3);
