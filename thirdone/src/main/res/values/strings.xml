@@ -14,5 +14,9 @@
     <string name="hint_nota4">Ingrese la nota de Proyecto Final</string>
     <string name="lblnotafinal">Nota Definitiva</string>
     <string name="btnnotafinal">Calcular Nota</string>
+    <string name="vacio">Campo Vacio</string>
+    <string name="correcto">Notas Correctamente Digitadas</string>
+    <string name="incorrecto">Alguna(s) notas estan mal Digitadas</string>
+
 
 </resources>

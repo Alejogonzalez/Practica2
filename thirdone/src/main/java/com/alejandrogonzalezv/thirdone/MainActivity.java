@@ -36,10 +36,10 @@ public class MainActivity extends ActionBarActivity {
                 String snota3 = nota3.getText().toString();
                 String snota4 = nota4.getText().toString();
                 //Obtengo el número de los Strings
-                if(snota1.isEmpty()){nota1.setError("Campo Vacio");}
-                if(snota2.isEmpty()){nota2.setError("Campo Vacio");}
-                if(snota3.isEmpty()){nota3.setError("Campo Vacio");}
-                if(snota4.isEmpty()){nota4.setError("Campo Vacio");}
+                if(snota1.isEmpty()){nota1.setError(getResources().getString(R.string.vacio));}
+                if(snota2.isEmpty()){nota2.setError(getResources().getString(R.string.vacio));}
+                if(snota3.isEmpty()){nota3.setError(getResources().getString(R.string.vacio));}
+                if(snota4.isEmpty()){nota4.setError(getResources().getString(R.string.vacio));}
                 else{
                 double dnota1 = Double.parseDouble(snota1);
                 double dnota2 = Double.parseDouble(snota2);
@@ -50,11 +50,11 @@ public class MainActivity extends ActionBarActivity {
                     double dnotaf = dnota1*0.15 + dnota2*0.10 + dnota3*0.4 + dnota4*0.35;
                     String Shownotaf = String.valueOf(dnotaf);
                     notaf.setText(Shownotaf);
-                    showe.setText("Notas Correctamente Digitadas");
+                    showe.setText(getResources().getString(R.string.correcto));
                     showe.setTextColor(getResources().getColor(R.color.green));
                 }
                 else{
-                    showe.setText("Alguna(s) notas estan mal Digitadas");
+                    showe.setText(getResources().getString(R.string.incorrecto));
                     showe.setTextColor(getResources().getColor(R.color.red));
                 }}
 
@@ -63,6 +63,26 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        final TextView notaf = (TextView) findViewById(R.id.Ednotafinal); //le puse asi por continuidad
+        final TextView showe = (TextView) findViewById(R.id.EdErrors);
+        outState.putString("notafinal",notaf.getText().toString());
+        outState.putString("errorshow",showe.getText().toString());
+        outState.putInt("errorcolor",showe.getCurrentTextColor());
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        final TextView notaf = (TextView) findViewById(R.id.Ednotafinal); //le puse asi por continuidad
+        final TextView showe = (TextView) findViewById(R.id.EdErrors);
+        notaf.setText(savedInstanceState.getString("notafinal"));
+        showe.setText(savedInstanceState.getString("errorshow"));
+        showe.setTextColor(savedInstanceState.getInt("errorcolor"));
+
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -15,4 +15,7 @@
     <string name="hint_nota4">Input Final Project grade</string>
     <string name="lblnotafinal">Final Grade</string>
     <string name="btnnotafinal">Calc Grade</string>
+    <string name="vacio">Empty Field</string>
+    <string name="correcto">Correctly typed grades</string>
+    <string name="incorrecto">Some grades are poorly typed</string>
 </resources>
