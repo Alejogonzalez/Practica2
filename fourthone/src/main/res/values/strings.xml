@@ -7,7 +7,7 @@
     <string name="lblaltura">Altura</string>
     <string name="lblradio">Radio</string>
     <string name="lbllado">Lado</string>
-    <string name="lblcuadro">Cuadro</string>
+    <string name="lblcuadro">Cuadrado</string>
     <string name="lblrectangulo">Rectángulo</string>
     <string name="lblcirculo">Círculo</string>
     <string name="lbltriang">Triángulo</string>
@@ -18,5 +18,6 @@
     <string name="titulo">Calculadora de Áreas de Figuras</string>
     <string name="btncalc">Calcular Área</string>
     <string name="lblcalc">Área = </string>
-
+    <string name="vacio">Campo Vacio</string>
+    <string name="unit"> Unidades^2</string>
 </resources>

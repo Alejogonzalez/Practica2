@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="lblbase">Base</string>
+    <string name="lblaltura">Height</string>
+    <string name="lblradio">Radius</string>
+    <string name="lbllado">Side</string>
+    <string name="lblcuadro">Square</string>
+    <string name="lblrectangulo">Rectangle</string>
+    <string name="lblcirculo">Circle</string>
+    <string name="lbltriang">Triangle</string>
+    <string name="hintaltura">Input a Height</string>
+    <string name="hintradio">Input a Radius</string>
+    <string name="hintlado">Input a Side</string>
+    <string name="hintbase">Input a Base</string>
+    <string name="titulo">Figures areas calculator</string>
+    <string name="btncalc">Calculate Area</string>
+    <string name="lblcalc">Area = </string>
+    <string name="vacio">Empty Field</string>
+    <string name="unit"> Units^2</string>
+</resources>

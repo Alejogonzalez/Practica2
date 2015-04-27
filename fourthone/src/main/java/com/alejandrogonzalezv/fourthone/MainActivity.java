@@ -34,50 +34,50 @@ public class MainActivity extends ActionBarActivity {
                 if (flag==1){//cuadrado
                     String sLado = EdLado.getText().toString();
                     if(sLado.isEmpty()){
-                        EdLado.setError("Campo Vacio");
+                        EdLado.setError(getResources().getString(R.string.vacio));
                     }
                     else{
                         double dLado = Double.parseDouble(sLado);
                         double Area = dLado*dLado;
                         String Showarea = String.valueOf(Area);
-                        TxResul.setText(Showarea+" unidades^2");
+                        TxResul.setText(Showarea+getResources().getString(R.string.unit));
                     }
                 }
                 if (flag==2){//Rectangulo
                     String sAltura = EdAltura.getText().toString();
                     String sBase = EdBase.getText().toString();
-                    if(sAltura.isEmpty()){EdAltura.setError("Campo Vacio");}
-                    if(sBase.isEmpty()){EdBase.setError("Campo Vacio");}
+                    if(sAltura.isEmpty()){EdAltura.setError(getResources().getString(R.string.vacio));}
+                    if(sBase.isEmpty()){EdBase.setError(getResources().getString(R.string.vacio));}
                     else{
                         double dAltura = Double.parseDouble(sAltura);
                         double dBase = Double.parseDouble(sBase);
                         double Area = dAltura*dBase;
                         String Showarea = String.valueOf(Area);
-                        TxResul.setText(Showarea+" unidades^2");
+                        TxResul.setText(Showarea+getResources().getString(R.string.unit));
                     }
                 }
                 if (flag==3){//Triangulo
                     String sAltura = EdAltura.getText().toString();
                     String sBase = EdBase.getText().toString();
-                    if(sAltura.isEmpty()){EdAltura.setError("Campo Vacio");}
-                    if(sBase.isEmpty()){EdBase.setError("Campo Vacio");}
+                    if(sAltura.isEmpty()){EdAltura.setError(getResources().getString(R.string.vacio));}
+                    if(sBase.isEmpty()){EdBase.setError(getResources().getString(R.string.vacio));}
                     else{
                         double dAltura = Double.parseDouble(sAltura);
                         double dBase = Double.parseDouble(sBase);
                         double Area = dAltura*dBase/2;
                         String Showarea = String.valueOf(Area);
-                        TxResul.setText(Showarea+" unidades^2");
+                        TxResul.setText(Showarea+getResources().getString(R.string.unit));
                     }
                 }
                 if (flag==4){//Rectangulo
                     String sRadio = EdRadio.getText().toString();
 
-                    if(sRadio.isEmpty()){EdRadio.setError("Campo Vacio");}
+                    if(sRadio.isEmpty()){EdRadio.setError(getResources().getString(R.string.vacio));}
                     else{
                         double dRadio = Double.parseDouble(sRadio);
                         double Area = 3.14159*dRadio*dRadio;
                         String Showarea = String.valueOf(Area);
-                        TxResul.setText(Showarea+" unidades^2");
+                        TxResul.setText(Showarea+getResources().getString(R.string.unit));
                     }
                 }
             }
@@ -143,6 +143,22 @@ public class MainActivity extends ActionBarActivity {
                     EdRadio.setHintTextColor(getResources().getColor(R.color.green));}
                 break;
         }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("bandera",flag);
+        TextView TxResul = (TextView) findViewById(R.id.txtresultado);
+        outState.putString("resultado",TxResul.getText().toString());
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        TextView TxResul = (TextView) findViewById(R.id.txtresultado);
+        flag = savedInstanceState.getInt("bandera",flag);
+        TxResul.setText(savedInstanceState.getString("resultado"));
     }
 
     @Override
