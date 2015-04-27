@@ -161,7 +161,7 @@
         android:layout_weight="1"
         android:layout_gravity="center"
         android:text="@string/btncalc"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:layout_marginTop="20dp"
         android:id="@+id/btnCalc"/>
     <LinearLayout
