@@ -11,10 +11,14 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 
+
 public class MainActivity extends ActionBarActivity {
     int flag=0;
+    static final String STATE_resultado = "saveresultado";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second_point);
 
@@ -83,9 +87,6 @@ public class MainActivity extends ActionBarActivity {
                 }
             }
         });
-
-
-
     }
     // listener del radio
     public void onRadioButtonClicked(View view) {
@@ -109,8 +110,24 @@ public class MainActivity extends ActionBarActivity {
             case R.id.radio_divi:
                 if (checked)
                     flag=4;
-                break;
+
         }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        final TextView total = (TextView) findViewById(R.id.LblTotal);
+        String t = total.getText().toString();
+        outState.putString(STATE_resultado,t);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        final TextView total = (TextView) findViewById(R.id.LblTotal);
+        total.setText(savedInstanceState.getString(STATE_resultado));
+
     }
 
     @Override
