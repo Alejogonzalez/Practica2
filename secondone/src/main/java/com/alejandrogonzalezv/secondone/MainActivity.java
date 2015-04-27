@@ -120,6 +120,7 @@ public class MainActivity extends ActionBarActivity {
         final TextView total = (TextView) findViewById(R.id.LblTotal);
         String t = total.getText().toString();
         outState.putString(STATE_resultado,t);
+        outState.putInt("bandera",flag);
     }
 
     @Override
@@ -127,6 +128,7 @@ public class MainActivity extends ActionBarActivity {
         super.onRestoreInstanceState(savedInstanceState);
         final TextView total = (TextView) findViewById(R.id.LblTotal);
         total.setText(savedInstanceState.getString(STATE_resultado));
+        flag = savedInstanceState.getInt("bandera",flag);
 
     }
 
