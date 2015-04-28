@@ -161,13 +161,44 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
+        final TextView txtsexo = (TextView) findViewById(R.id.Txtsex);
+        final TextView hobbies = (TextView) findViewById(R.id.Txthobbies);
+        final TextView txciudad = (TextView) findViewById(R.id.Txtciudad);
+        final TextView txfecha = (TextView) findViewById(R.id.Txtfecha);
+        final TextView txtnombre = (TextView) findViewById(R.id.TxtNombre);
+        final TextView txtcorreo = (TextView) findViewById(R.id.Txtcorreo);
+        final TextView txttelefono = (TextView) findViewById(R.id.Txttelef);
         outState.putInt("banderacheck",flagh);
+        outState.putString("sexo",txtsexo.getText().toString());
+        outState.putString("hobb",hobbies.getText().toString());
+        outState.putString("ciudad",txciudad.getText().toString());
+        outState.putString("fecha",txfecha.getText().toString());
+
+        outState.putString("nomb",txtnombre.getText().toString());
+        outState.putString("correo",txtcorreo.getText().toString());
+        outState.putString("telef",txttelefono.getText().toString());
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         flagh = savedInstanceState.getInt("banderacheck",flagh);
+        final TextView txtsexo = (TextView) findViewById(R.id.Txtsex);
+        final TextView hobbies = (TextView) findViewById(R.id.Txthobbies);
+        final TextView txciudad = (TextView) findViewById(R.id.Txtciudad);
+        final TextView txfecha = (TextView) findViewById(R.id.Txtfecha);
+        final TextView txtnombre = (TextView) findViewById(R.id.TxtNombre);
+        final TextView txtcorreo = (TextView) findViewById(R.id.Txtcorreo);
+        final TextView txttelefono = (TextView) findViewById(R.id.Txttelef);
+        txtsexo.setText(savedInstanceState.getString("sexo"));
+        hobbies.setText(savedInstanceState.getString("hobb"));
+        txciudad.setText(savedInstanceState.getString("ciudad"));
+        txfecha.setText(savedInstanceState.getString("fecha"));
+
+        txtnombre.setText(savedInstanceState.getString("nomb"));
+        txtcorreo.setText(savedInstanceState.getString("correo"));
+        txttelefono.setText(savedInstanceState.getString("telef"));
+
     }
 
     public void showDatePickerDialog(View v) {
