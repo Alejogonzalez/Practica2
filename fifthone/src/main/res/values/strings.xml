@@ -56,4 +56,37 @@
             <item>Yopal</item>
         </string-array>
 
+    <string name="h1">Gaming</string>
+    <string name="h2">Deportes</string>
+    <string name="h4">Bailar</string>
+    <string name="h8">Leer</string>
+    <string name="h3">Gaming y Deportes</string>
+    <string name="h5">Gaming y Bailar</string>
+    <string name="h9">Gaming y Leer</string>
+    <string name="h6">Deportes y Bailar</string>
+    <string name="h10">Deportes y Leer</string>
+    <string name="h12">Bailar y Leer</string>
+    <string name="h7">Gaming, Deportes y Bailar</string>
+    <string name="h14">Deportes, Bailar y Leer</string>
+    <string name="h11">Gaming, Deportes y Leer</string>
+    <string name="h13">Gaming, Bailar y Leer</string>
+    <string name="h15">Gaming, Deportes, Bailar y Leer</string>
+    <string name="h0">Vacio</string>
+
+    <string name="enero">Enero</string>
+    <string name="febrer">Febrero</string>
+    <string name="marzo">Marzo</string>
+    <string name="abril">Abril</string>
+    <string name="mayo">Mayo</string>
+    <string name="juni">Junio</string>
+    <string name="julio">Julio</string>
+    <string name="agosto">Agosto</string>
+    <string name="septiem">Septiembre</string>
+    <string name="octub">Octubre</string>
+    <string name="noviem">Noviembre</string>
+    <string name="diciem">Diciembre</string>
+
+    <string name="masc">Masculino</string>
+    <string name="feme">Femenino</string>
+
 </resources>

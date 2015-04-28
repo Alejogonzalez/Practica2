@@ -59,30 +59,30 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
 
 
-                txtnombre.setText(nombre.getText());
-                txtcorreo.setText(correo.getText());
-                txttelefono.setText(telefono.getText());
+                txtnombre.setText(nombre.getText().toString());
+                txtcorreo.setText(correo.getText().toString());
+                txttelefono.setText(telefono.getText().toString());
 
-                if(flag==1){txtsexo.setText("Femenino");}
-                if(flag==2){txtsexo.setText("Masculino");}
+                if(flag==1){txtsexo.setText(getResources().getString(R.string.feme));}
+                if(flag==2){txtsexo.setText(getResources().getString(R.string.masc));}
 
                 //hobbies.setText(String.valueOf(flagh));
-                if(flagh==1){hobbies.setText("Gaming");}
-                if(flagh==2){hobbies.setText("Deportes");}
-                if(flagh==4){hobbies.setText("Bailar");}
-                if(flagh==8){hobbies.setText("Leer");}
-                if(flagh==3){hobbies.setText("Gaming y Deportes");}
-                if(flagh==5){hobbies.setText("Gaming y Bailar");}
-                if(flagh==9){hobbies.setText("Gaming y Leer");}
-                if(flagh==6){hobbies.setText("Deportes y Bailar");}
-                if(flagh==10){hobbies.setText("Deportes y Leer");}
-                if(flagh==12){hobbies.setText("Bailar y Leer");}
-                if(flagh==7){hobbies.setText("Gaming, Deportes y Bailar");}
-                if(flagh==14){hobbies.setText("Deportes, Bailar y Leer");}
-                if(flagh==11){hobbies.setText("Gaming, Deportes y Leer");}
-                if(flagh==13){hobbies.setText("Gaming, Bailar y Leer");}
-                if(flagh==15){hobbies.setText("Gaming, Deportes, Bailar y Leer");}
-                if(flagh==0){hobbies.setText("Hobbies");}
+                if(flagh==1){hobbies.setText(getResources().getString(R.string.h1));}
+                if(flagh==2){hobbies.setText(getResources().getString(R.string.h2));}
+                if(flagh==4){hobbies.setText(getResources().getString(R.string.h4));}
+                if(flagh==8){hobbies.setText(getResources().getString(R.string.h8));}
+                if(flagh==3){hobbies.setText(getResources().getString(R.string.h3));}
+                if(flagh==5){hobbies.setText(getResources().getString(R.string.h5));}
+                if(flagh==9){hobbies.setText(getResources().getString(R.string.h9));}
+                if(flagh==6){hobbies.setText(getResources().getString(R.string.h6));}
+                if(flagh==10){hobbies.setText(getResources().getString(R.string.h10));}
+                if(flagh==12){hobbies.setText(getResources().getString(R.string.h12));}
+                if(flagh==7){hobbies.setText(getResources().getString(R.string.h7));}
+                if(flagh==14){hobbies.setText(getResources().getString(R.string.h14));}
+                if(flagh==11){hobbies.setText(getResources().getString(R.string.h11));}
+                if(flagh==13){hobbies.setText(getResources().getString(R.string.h13));}
+                if(flagh==15){hobbies.setText(getResources().getString(R.string.h15));}
+                if(flagh==0){hobbies.setText(getResources().getString(R.string.h0));}
 
                 txciudad.setText(String.valueOf(spinner.getSelectedItem()));
 
@@ -115,18 +115,18 @@ public class MainActivity extends ActionBarActivity {
             String smonth = "";
             final String syear = String.valueOf(year);
             final String sday = String.valueOf(day);
-            if(month==0){smonth="Enero";}
-            if(month==1){smonth="Febrero";}
-            if(month==2){smonth="Marzo";}
-            if(month==3){smonth="Abril";}
-            if(month==4){smonth="Mayo";}
-            if(month==5){smonth="Junii";}
-            if(month==6){smonth="Julio";}
-            if(month==7){smonth="Agosto";}
-            if(month==8){smonth="Septiembre";}
-            if(month==9){smonth="Octubre";}
-            if(month==10){smonth="Noviembre";}
-            if(month==11){smonth="Diciembre";}
+            if(month==0){smonth=getResources().getString(R.string.enero);}
+            if(month==1){smonth=getResources().getString(R.string.febrer);}
+            if(month==2){smonth=getResources().getString(R.string.marzo);}
+            if(month==3){smonth=getResources().getString(R.string.abril);}
+            if(month==4){smonth=getResources().getString(R.string.mayo);}
+            if(month==5){smonth=getResources().getString(R.string.juni);}
+            if(month==6){smonth=getResources().getString(R.string.julio);}
+            if(month==7){smonth=getResources().getString(R.string.agosto);}
+            if(month==8){smonth=getResources().getString(R.string.septiem);}
+            if(month==9){smonth=getResources().getString(R.string.octub);}
+            if(month==10){smonth=getResources().getString(R.string.noviem);}
+            if(month==11){smonth=getResources().getString(R.string.diciem);}
             Button btnsubmit = (Button) getActivity().findViewById(R.id.btnok);
             final String finalSmonth = smonth;
            // btnsubmit.setOnClickListener(new View.OnClickListener() {
@@ -157,6 +157,19 @@ public class MainActivity extends ActionBarActivity {
             // Another interface callback
         }
     }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("banderacheck",flagh);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        flagh = savedInstanceState.getInt("banderacheck",flagh);
+    }
+
     public void showDatePickerDialog(View v) {
         DialogFragment newFragment = new DatePickerFragment();
           newFragment.show(getFragmentManager(),"datePicker");
