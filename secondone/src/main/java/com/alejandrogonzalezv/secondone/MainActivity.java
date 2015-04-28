@@ -39,7 +39,7 @@ public class MainActivity extends ActionBarActivity {
                 if(flag==1){
                     String snum1 = num1.getText().toString();
                     String snum2 = num2.getText().toString();
-                    if(snum1.isEmpty() || snum2.isEmpty()){num1.setError("Campo Vacio");num2.setError("Campo Vacio");}
+                    if(snum1.isEmpty() || snum2.isEmpty()){num1.setError(getString(R.string.error));num2.setError(getString(R.string.error));}
                     else{
                     double dnum1 = Double.parseDouble(snum1);
                     double dnum2 = Double.parseDouble(snum2);
@@ -50,7 +50,7 @@ public class MainActivity extends ActionBarActivity {
                 if(flag==2){
                     String snum1 = num1.getText().toString();
                     String snum2 = num2.getText().toString();
-                    if(snum1.isEmpty() || snum2.isEmpty()){num1.setError("Campo Vacio");num2.setError("Campo Vacio");}
+                    if(snum1.isEmpty() || snum2.isEmpty()){num1.setError(getString(R.string.error));num2.setError(getString(R.string.error));}
                     else{
                     double dnum1 = Double.parseDouble(snum1);
                     double dnum2 = Double.parseDouble(snum2);
@@ -61,7 +61,7 @@ public class MainActivity extends ActionBarActivity {
                 if(flag==3){
                     String snum1 = num1.getText().toString();
                     String snum2 = num2.getText().toString();
-                    if(snum1.isEmpty() || snum2.isEmpty()){num1.setError("Campo Vacio");num2.setError("Campo Vacio");}
+                    if(snum1.isEmpty() || snum2.isEmpty()){num1.setError(getString(R.string.error));num2.setError(getString(R.string.error));}
                     else{
                     double dnum1 = Double.parseDouble(snum1);
                     double dnum2 = Double.parseDouble(snum2);
@@ -72,12 +72,12 @@ public class MainActivity extends ActionBarActivity {
                 if(flag==4){
                     String snum1 = num1.getText().toString();
                     String snum2 = num2.getText().toString();
-                    if(snum1.isEmpty() || snum2.isEmpty()){num1.setError("Campo Vacio");num2.setError("Campo Vacio");}
+                    if(snum1.isEmpty() || snum2.isEmpty()){num1.setError(getString(R.string.error));num2.setError(getString(R.string.error));}
                     else{
                     double dnum1 = Double.parseDouble(snum1);
                     double dnum2 = Double.parseDouble(snum2);
                     if(dnum2==0){
-                        total.setText("División por cero");
+                        total.setText(getString(R.string.div0));
                     }
                     else{
                         double dtotal = dnum1 / dnum2;

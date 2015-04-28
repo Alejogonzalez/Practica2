@@ -13,4 +13,6 @@
     <string name="RdMultp">Multimplicación</string>
     <string name="RdDiv">División</string>
     <string name="BtnCalcular">Calcular</string>
+    <string name="error">Campo Vacio</string>
+    <string name="div0">División por 0 no permitida</string>
 </resources>
