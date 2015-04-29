@@ -6,6 +6,6 @@
     </style>
     <style name="textViewStyle" parent="android:style/TextAppearance.Medium">
         <item name="android:textColor">@color/maroon</item>
-        <item name="android:textSize">25dp</item>
+        <item name="android:textSize">20dp</item>
     </style>
 </resources>
