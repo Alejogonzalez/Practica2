@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
     int flag=0;
-    static final String STATE_resultado = "saveresultad";
+    static final String STATE_resultado = "saveresultadoo";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
