@@ -5,10 +5,10 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="titulo">Movile Device Programing</string>
-    <string name="lblnota1">Quiz 15%</string>
-    <string name="lblnota2">Presentations 10%</string>
-    <string name="lblnota3">Labs 40%</string>
-    <string name="lblnota4">Final Project 35%</string>
+    <string name="lblnota1">Quiz</string>
+    <string name="lblnota2">Presentations</string>
+    <string name="lblnota3">Labs </string>
+    <string name="lblnota4">Final Project </string>
     <string name="hint_nota1">Input Quiz grade</string>
     <string name="hint_nota2">Input Presentations grade</string>
     <string name="hint_nota3">Ingrese Labs grade</string>
@@ -18,4 +18,9 @@
     <string name="vacio">Empty Field</string>
     <string name="correcto">Correctly typed grades</string>
     <string name="incorrecto">Some grades are poorly typed</string>
+    <string name="about">Calc the grade of Movile Device Programming curse
+                    by Alejandro González Varelas</string>
+    <string name="abus">About us</string>
+    <string name="title_activity_about">About us</string>
+
 </resources>

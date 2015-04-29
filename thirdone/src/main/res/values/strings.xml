@@ -4,10 +4,10 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="titulo">Programación de Dispositivos Móviles</string>
-    <string name="lblnota1">Quices 15%</string>
-    <string name="lblnota2">Exposiciones 10%</string>
-    <string name="lblnota3">Laboratorio 40%</string>
-    <string name="lblnota4">Proyecto Final 35%</string>
+    <string name="lblnota1">Quices </string>
+    <string name="lblnota2">Exposiciones</string>
+    <string name="lblnota3">Laboratorio </string>
+    <string name="lblnota4">Proyecto Final </string>
     <string name="hint_nota1">Ingrese la nota de Quices</string>
     <string name="hint_nota2">Ingrese la nota de Exposiciones</string>
     <string name="hint_nota3">Ingrese la nota de Laboratorio</string>
@@ -17,6 +17,11 @@
     <string name="vacio">Campo Vacio</string>
     <string name="correcto">Notas Correctamente Digitadas</string>
     <string name="incorrecto">Alguna(s) notas estan mal Digitadas</string>
-
+    <string name="title_activity_about">Acerda de</string>
+    <string name="abus">Acerda de</string>
+    <string name="about">Aplicacion para calcular nota de programación de dispositivos móviles
+                         Alejandro González Varelas</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="porcen">Modificar Porcentaje</string>
 
 </resources>
