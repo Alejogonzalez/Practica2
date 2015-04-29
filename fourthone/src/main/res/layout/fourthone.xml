@@ -170,6 +170,7 @@
                 android:layout_weight="1"
                 android:textSize="30dp"
                 android:id="@+id/txtresultado"
+
                 />
          </LinearLayout>
 </LinearLayout>
