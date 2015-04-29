@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Thirdone</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="titulo">Programación de Dispositivos Móviles</string>
+    <string name="lblnota1">Quices 15%</string>
+    <string name="lblnota2">Exposiciones 10%</string>
+    <string name="lblnota3">Laboratorio 40%</string>
+    <string name="lblnota4">Proyecto Final 35%</string>
+    <string name="hint_nota1">Ingrese la nota de Quices</string>
+    <string name="hint_nota2">Ingrese la nota de Exposiciones</string>
+    <string name="hint_nota3">Ingrese la nota de Laboratorio</string>
+    <string name="hint_nota4">Ingrese la nota de Proyecto Final</string>
+    <string name="lblnotafinal">Nota Definitiva</string>
+    <string name="btnnotafinal">Calcular Nota</string>
+    <string name="vacio">Campo Vacio</string>
+    <string name="correcto">Notas Correctamente Digitadas</string>
+    <string name="incorrecto">Alguna(s) notas estan mal Digitadas</string>
+</resources>
