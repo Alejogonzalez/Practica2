@@ -14,9 +14,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/Lblnum1"
-                android:textSize="20dp"
+
                 android:layout_weight="2"
-                android:textColor="@color/maroon"/>
+                style="@style/textViewStyle"/>
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -36,9 +36,8 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/Lblnum2"
-                android:textSize="20dp"
                 android:layout_weight="2"
-                android:textColor="@color/maroon"/>
+                style="@style/textViewStyle"/>
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -100,13 +99,14 @@
             android:textSize="30dp"
             android:text="@string/LblResul"
             android:layout_weight="1.75"
-            android:textColor="@color/maroon"/>
+            style="@style/textViewStyle"/>
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:id="@+id/LblTotal"
             android:inputType="numberDecimal"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            style="@style/textViewStyle"/>
     </LinearLayout>
 </LinearLayout>
