@@ -28,7 +28,7 @@ public class MainActivity extends ActionBarActivity {
     int gday = 0;
     int flag=0;
     int flagh=0;
-    String showh="";
+    String showh=" ";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
